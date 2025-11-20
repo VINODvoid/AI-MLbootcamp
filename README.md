@@ -32,7 +32,7 @@ This repository chronicles my systematic journey through AI/ML fundamentals, sta
 ### Current Progress
 
 ```
-Day 01 ████████████████████░░  NumPy Fundamentals [Complete]
+Day 01 ██████████████████████  NumPy & Pandas Basics [In Progress]
 Day 02 ░░░░░░░░░░░░░░░░░░░░  Coming Soon
 Day 03 ░░░░░░░░░░░░░░░░░░░░  Coming Soon
 ```
@@ -91,12 +91,33 @@ The first day focuses on mastering NumPy, the fundamental package for scientific
 </tr>
 </table>
 
-#### 🎯 Key Takeaways from Day 01
+#### 🎯 Key Takeaways from Day 01 - NumPy
 
 - **Speed Matters**: NumPy arrays are ~23x faster than Python lists for numerical operations
 - **Memory Efficiency**: Fixed-type arrays use significantly less memory than dynamic Python lists
 - **Broadcasting**: Powerful mechanism for performing operations on arrays of different shapes
 - **Vectorization**: Write cleaner, more efficient code without explicit loops
+
+### **Day 01** — Pandas Introduction
+
+> *Getting started with data manipulation and analysis*
+
+Building on NumPy fundamentals, this notebook introduces Pandas for working with structured data:
+
+**Pandas Basics** [`pandas.ipynb`](Day01/pandas.ipynb)
+- Reading CSV files with `pd.read_csv()`
+- Data exploration methods (head, tail, info, describe)
+- Column and row selection
+- Index-based access (loc, iloc)
+- Filtering data with boolean conditions
+- Working with multiple conditions using logical operators
+
+#### 🎯 Key Concepts Covered
+
+- **DataFrames**: Two-dimensional labeled data structures
+- **Data Selection**: Multiple methods for accessing specific data
+- **Filtering**: Using boolean indexing for data subsetting
+- **Conditional Logic**: Combining multiple conditions with `&` and `|` operators
 
 ---
 
@@ -150,11 +171,12 @@ jupyter notebook
 ```
 aimlBootCamp/
 │
-├── Day01/                          # NumPy Fundamentals
+├── Day01/                          # NumPy & Pandas Fundamentals
 │   ├── numpy-phase01.ipynb        # Introduction & Basics
 │   ├── numpy-phase02.ipynb        # Intermediate Operations
 │   ├── numpy-phase03.ipynb        # Advanced Techniques
 │   ├── numpy-phase04.ipynb        # Optimization & Best Practices
+│   ├── pandas.ipynb               # Pandas Introduction & Basics
 │   └── numpy-logo.npy             # NumPy logo data
 │
 ├── Day02/                          # Coming Soon
